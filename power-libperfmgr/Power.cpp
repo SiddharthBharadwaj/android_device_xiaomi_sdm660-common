@@ -39,6 +39,10 @@
 
 extern struct stat_pair rpm_stat_map[];
 
+#ifndef TAP_TO_WAKE_NODE
+#define TAP_TO_WAKE_NODE "/sys/touchpanel/double_tap"
+#endif
+
 namespace android {
 namespace hardware {
 namespace power {
